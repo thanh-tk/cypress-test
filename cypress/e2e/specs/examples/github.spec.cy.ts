@@ -1,4 +1,4 @@
-import { gitHubLogin } from "../../page-obj/git-hub.page";
+import { gitHubLogin } from "../../class/git-hub.page";
 
 describe("GitHUb Navigation", () => {
   const login = new gitHubLogin();

@@ -1,33 +1,10 @@
-export class vtms_login {
-  userName() {
-    return cy.get('input[id="username"]').first();
-  }
-  password() {
-    return cy.get('input[id="password"]').first();
-  }
-  login() {
-    return cy.get('input[name="login"]').first();
-  }
-}
-
-export class vtms_mainPage {
-  transactionComp() {
-    return cy.get("#transaction").first();
-  }
-  transPayment() {
-    return cy.get("#payment").first();
-  }
-  dashboard() {
-    return cy.get("#dashboard").first();
-  }
-}
-export class vtms_PaymentPage {
+export class PaymentPage {
   addNewBtn() {
     return cy.get('button[name="addPaymentBtn"]').first();
   }
 }
 
-export class newPaymentPage {
+export class NewPaymentPage {
   savePaymentBtn() {
     return cy.get('button[id="save-payment-btn"]').first();
   }
@@ -46,17 +23,17 @@ export class newPaymentPage {
   valueAmt() {
     return cy.get(`[formcontrolname="value_original"]`).last();
   }
-  
+
   overlayCdk() {
-    return cy.get('.cdk-overlay-container');
+    return cy.get(".cdk-overlay-container");
   }
 }
 
-export class paymentDetail {
-  paymentNo () {
+export class PaymentDetailsPage {
+  paymentNo() {
     return cy.get("#payment-no").first();
   }
-  amount () {
+  amount() {
     return cy.get("#value_original").first();
   }
 }
